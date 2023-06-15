@@ -16,6 +16,9 @@ public class regimePagamento {
         }else if (professor.getRegimePagamento().getTipoPagamento().equals("PJ")) {
             double valorContrato = Integer.parseInt(JOptionPane.showInputDialog("Informe o valor do contrato"));
             JOptionPane.showMessageDialog(null,"O professor " + professor.getNome() + " receberá o valor de: R$ " + valorContrato + " seu regime de tabalho é: " + professor.getRegimePagamento().getTipoPagamento());
+        } else if(professor.getRegimePagamento().getTipoPagamento() != "CPF" && professor.getRegimePagamento().getTipoPagamento() != "Horista" && professor.getRegimePagamento().getTipoPagamento() != "PJ"){
+            this.tipoPagamento = JOptionPane.showInputDialog(null, "Informe um dos três tipos de Regime, CPF | Horista | PJ");
+            verificarPagamento();
         }
     }
 

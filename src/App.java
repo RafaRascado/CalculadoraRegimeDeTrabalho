@@ -9,7 +9,7 @@ public class App {
         professor1.setRegimePagamento(reg1);
         reg1.setProfessor(professor1);
 
-        reg1.setTipoPagamento("Horista");
+        reg1.setTipoPagamento("CPF");
         reg1.verificarPagamento();
     }
 }
